@@ -68,3 +68,20 @@
     cursor: pointer;
   }
   
+  .tag-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tag-buttons img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-family: 'Raleway', sans-serif;
+  }

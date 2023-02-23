@@ -36,3 +36,27 @@ function filterImages() {
     }
   });
 }
+function filterImagesByTag(tag) {
+  // Loop through all of the images and check if they have the tag as a data-tag
+  images.forEach((image) => {
+    const tags = image.dataset.tags.split(",");
+    if (tags.includes(tag)) {
+      // If the image has the tag, show it
+      image.style.display = "block";
+    } else {
+      // If the image does not have the tag, hide it
+      image.style.display = "none";
+    }
+  });
+}
+
+function showAllImages() {
+  // Loop through all of the images and show them
+  images.forEach((image) => {
+    image.style.display = "block";
+  });
+
+  // Reset the search bar input value to an empty string
+  document.querySelector(".search-bar input").value = "";
+}
+
