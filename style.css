@@ -82,6 +82,11 @@
     cursor: pointer;
   }
 
+  .tag-buttons img:hover {
+    transform: scale(1.50);
+    transition: 0.2s;
+  }
+
   h1 {
     font-family: 'Raleway', sans-serif;
   }
