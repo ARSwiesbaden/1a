@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <h1></h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for tags" oninput="filterImages()">
+      </div>
+      <div class="image-row">
+        <img src="img/mathe_22_02_2023_1.jpeg" alt="mathe_22_02_2023_1" data-tags="mathe" onclick="showImage('img/mathe_22_02_2023_1.jpeg')">
+        <img src="img/mathe_22_02_2023_2.jpeg" alt="mathe_22_02_2023_2" data-tags="mathe" onclick="showImage('img/mathe_22_02_2023_2.jpeg')">
+        <img src="img/gl_07_02_2023.jpeg" alt="gl_07_02_2023" data-tags="mathe" onclick="showImage('img/gl_07_02_2023.jpeg')">
+      </div>
+    </div>
+    <div id="full-image-container" onclick="hideImage(event)">
+      <span class="close-button" onclick="hideImage(event)">&times;</span>
+      <img id="full-image" src="" alt="Full-size Image">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
