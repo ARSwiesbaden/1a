@@ -36,8 +36,28 @@
     z-index: 4;
   }
 
+  img[data-tags="bio"] {
+    outline: 7px solid #038e00;
+  }
+  img[data-tags="deutsch"] {
+    outline: 7px solid #c6b600;
+  }
+  img[data-tags="englisch"] {
+    outline: 7px solid #cb0000;
+  }
+  img[data-tags="gl"] {
+    outline: 7px solid #61390a;
+  }
+  img[data-tags="physik"] {
+    outline: 7px solid #670089;
+  }
+  img[data-tags="mathe"] {
+    outline: 7px solid #005ead;
+  }
+
+
   .image-row img:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
     transition: 0.2s;
   }
 
