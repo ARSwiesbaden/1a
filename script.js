@@ -37,15 +37,20 @@ function filterImages() {
   });
 }
 function filterImagesByTag(tag) {
-  // Loop through all of the images and check if they have the tag as a data-tag
-  images.forEach((image) => {
-    const tags = image.dataset.tags.split(",");
-    if (tags.includes(tag)) {
-      // If the image has the tag, show it
-      image.style.display = "block";
+  const images = document.querySelectorAll('.image-row img');
+  const imageTexts = document.querySelectorAll('.image-row .image-text');
+  images.forEach(image => {
+    if (image.dataset.tags.includes(tag)) {
+      image.style.display = 'block';
     } else {
-      // If the image does not have the tag, hide it
-      image.style.display = "none";
+      image.style.display = 'none';
+    }
+  });
+  imageTexts.forEach(imageText => {
+    if (imageText.dataset.tags.includes(tag)) {
+      imageText.style.display = 'block';
+    } else {
+      imageText.style.display = 'none';
     }
   });
 }
