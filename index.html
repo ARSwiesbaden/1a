@@ -8,10 +8,13 @@
   </head>
   <body>
     <div class="page-container">
+
       <h1>ARS 1a</h1>
+
       <div class="search-bar">
         <input type="text" placeholder="Search for tags" oninput="filterImages()">
       </div>
+
       <div class="tag-buttons">
         <img src="buttons/deutsch.png" alt="Deutsch" onclick="filterImagesByTag('deutsch')">
         <img src="buttons/englisch.png" alt="Englisch" onclick="filterImagesByTag('englisch')">
@@ -20,22 +23,60 @@
         <img src="buttons/physik.png" alt="Physik" onclick="filterImagesByTag('physik')">
         <img src="buttons/biologie.png" alt="Bio" onclick="filterImagesByTag('bio')">
         <img src="buttons/alle.png" alt="all" onclick="showAllImages()">
-      </div>      
+      </div>    
+        
       <div class="image-row">
+
+        <div class="image-container">
         <img src="img/deutsch23022023_1.jpeg" alt="deutsch23022023_1" data-tags="deutsch" onclick="showImage('img/deutsch23022023_1.jpeg')">
+        <img class="overlay" src="buttons/deutsch.png" alt="overlay">
+        </div>
+
+        <div class="image-container">
         <img src="img/bio23022023_4.jpeg" alt="bio23022023_4" data-tags="bio" onclick="showImage('img/bio23022023_4.jpeg')">
+        <img class="overlay" src="buttons/biologie.png" alt="overlay">
+        </div>
+
+        <div class="image-container">
         <img src="img/bio23022023_3.jpeg" alt="bio23022023_3" data-tags="bio" onclick="showImage('img/bio23022023_3.jpeg')">
+        <img class="overlay" src="buttons/biologie.png" alt="overlay">
+        </div>
+        
+        <div class="image-container">
         <img src="img/bio23022023_2.jpeg" alt="bio23022023_2" data-tags="bio" onclick="showImage('img/bio23022023_2.jpeg')">
+        <img class="overlay" src="buttons/biologie.png" alt="overlay">  
+        </div>
+
+        <div class="image-container">
         <img src="img/bio23022023_1.jpeg" alt="bio23022023_1" data-tags="bio" onclick="showImage('img/bio23022023_1.jpeg')">
+        <img class="overlay" src="buttons/biologie.png" alt="overlay">
+        </div>
+
+        <div class="image-container">
         <img src="img/mathe_22_02_2023_1.jpeg" alt="mathe_22_02_2023_1" data-tags="mathe" onclick="showImage('img/mathe_22_02_2023_1.jpeg')">
+        <img class="overlay" src="buttons/mathe.png" alt="overlay">
+        </div>
+
+        <div class="image-container">
         <img src="img/mathe_22_02_2023_2.jpeg" alt="mathe_22_02_2023_2" data-tags="mathe" onclick="showImage('img/mathe_22_02_2023_2.jpeg')">
+        <img class="overlay" src="buttons/mathe.png" alt="overlay">
+        </div>
+
+        <div class="image-container">
         <img src="img/gl_07_02_2023.jpeg" alt="gl_07_02_2023" data-tags="gl" onclick="showImage('img/gl_07_02_2023.jpeg')">
-         </div>
+        <img class="overlay" src="buttons/gl.png" alt="overlay">
+        </div>
+
+      </div>
+
     </div>
+
     <div id="full-image-container" onclick="hideImage(event)">
       <span class="close-button" onclick="hideImage(event)">&times;</span>
       <img id="full-image" src="" alt="Full-size Image">
     </div>
+
     <script src="script.js"></script>
+
   </body>
 </html>
