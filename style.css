@@ -31,7 +31,16 @@
     height: 300px;
     object-fit: cover;
     margin: 10px;
+    border: 6px solid black;
+    cursor: pointer;
+    z-index: 4;
   }
+
+  .image-row img:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
+
   
   #full-image-container {
     display: none;
@@ -50,6 +59,7 @@
     max-height: 80%;
     margin: auto;
     display: block;
+    border: 5px solid black;
   }
   
   .close-button {
