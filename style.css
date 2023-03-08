@@ -1,7 +1,3 @@
-body {
-  background-color: #ffffff;
-}
-
 .page-container {
     display: flex;
     flex-direction: column;
